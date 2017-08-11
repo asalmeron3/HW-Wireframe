@@ -1,0 +1,53 @@
+<!-- Below this begins the initial information for starting any html site -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Hw 1 HTML page </title>
+    <!-- linking this html sheet to my one (1) css styling sheet -->
+ <link rel="stylesheet"  href = "style.css"> 
+</head>
+<!-- other that closing my tags, this ends the initial formatting needed to begin my html site. Below will begin my body and contect/components of my site -->
+
+	<!-- Making my overall container for all my elements. From Google Inspector, I can confirm that this container was made. -->
+
+	<body class = "fullbod"> <!-- when styling, everything in the body is being styled. The backgroung color here overwrites all other colors.  -->
+		<div class = "bars"> <!-- cannot contain a background color. Just an arbitrary  division in my page . Everything within this division will default to the size dimensions set for this division. -->
+			<header id = "heading"> header
+			</header>
+		</div>
+
+		<!-- After playing with developer tools, I am setting up classes for my heading, navigation and footer. The three of these will need the same color and width but my differ individually (thus needing id's as well) -->
+		<div class = "bars">
+			<nav id = "nav"> nav
+			</nav>
+		</div>
+		
+		<!-- This is the middle section/division that will need to comprise of a left and a right section. Floats don't seem too appropr -->
+		<div class = "middle"> <!-- going to use clear fix here. Just testing it out to see how it will affect my page-->
+
+		<!-- Based on developers tools; this method for divisions has worked. Floats left and right were used in css styling -->
+
+			<section id = "left">  section 
+				
+				<div id = "grayArticle"> article 
+
+					<div class = "artContent" id = "heads"> h1, h2, h3 </div>
+
+					<div class = "artContent" id = "paras"> p </div>
+
+				</div>
+			</section>
+
+
+
+			<aside id  = "right"> aside </aside>
+		</div>
+
+		<div class = "bars">
+			<footer id = "foot"> footer</footer>
+		</div>
+
+	</body>
+</html>
+

@@ -1,0 +1,60 @@
+ .fullbod {background: #777;
+ 	font-family: 'Arial'; /* this will set all text in my body to font-family: Arial */;
+ 	font-size: 18px;
+ 	max-width: 960px; 
+ 	margin: auto;/*using this it "center" all my content. This will make the left and right margins */
+ 	color:#777;} 
+ 
+ .bars { /* .bars will affect my header, navigation, and footer "bars" */
+	background: #ebebeb;
+	width: 100%; 
+ 	text-align: center;
+ 	margin-top: 15px;  	/* adding margins to the top and bottom of each "bar" in order to get some spacining in between my elements (bars) */
+ 	margin-bottom: 15px;
+ 	padding: 50px 0px;} /* based onthe layout given, there is padding on the top & bottom of each of the words withing the bar. using shorthand method to padd top/bottom */
+
+
+
+ .middle {width: 100%; /* the entire middle section (with both section & aside) must be 960px (100% of the body's width)*/
+ 	background: #777;
+ 	position: relative; /*the middle should be relative to where it is typed out in the html file */
+ 	height: 220px; }
+
+
+	#left {float: left; /*this section must float left */
+		width: 51.5625%; /* this percent comes from the 495px requirement divided by total width of 960px . Using % to make my site/page responsive*/
+		text-align: center;
+		background: #ebebeb;
+		padding-top: 20px;
+		height:200px;} /* the total height of the middle section is 220px. Since I am using 20px for the padding, I will use the remainnig 200px for the height of this section*/
+
+		#grayArticle {color: #ebebeb;
+			font-family: 'Helvetica Neue'; /*changinig the font of my "article" section from arial to H.N. */
+			background: #777;
+			width: 95%; /*the width of the article within the left section is not 100%, using slightly smaller size */
+			height:70%;/*the height of the article within the left section is not 100%, using smaller size */
+			margin:auto; /*centering he overall article-container */
+			margin-top:10px; /* giving some spacing between the "section" title and the overall article container */
+			padding-top:20px;} /*giving some spacing to the "article" title from the top of its container */
+
+			.artContent {
+				background: #ebebeb;
+				width: 90%; /* the width of the headers/paragraph containers are not 100% the width of the Article-container. Using small size */
+				margin:auto;  /*centering my containers */
+				margin-top: 10px;/* the spacing around the headers and paragraph containers  (from the exmple) suggest that there are margins */
+				position:relative;
+				padding: 10px 0px;} /* the spacing around the headers and paragraph TEXT ( height of the individual containers) suggest that there is padding */
+
+				#heads{font-family: 'Helvetica'; /*changing the fonts of my headers and paragraphs to differ from all the rest of my page */
+				font-weight: bold;}
+				#paras {font-family: 'san-serif';}
+
+
+	#right {float: right; /* the aside container is the right of the section-container. Thus, floating it right */
+		width: 46%; /*48.4375% is what is remaining from #left: 100% - 51.5625%. I am using a smaller percent in order to add spacing between the article & section */
+		text-align: center;
+		background: #ebebeb;
+		padding-top: 20px;
+		height:200px;}
+
+#foot {clear: both;} /*the section & aside containers are both floating, thus the footer must be cleared in order to be placed beneath both containers */
